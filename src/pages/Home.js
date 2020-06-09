@@ -12,28 +12,11 @@ import img1 from "../assets/hero.jpeg";
 import img2 from "../assets/hero.jpg";
 
 
-const Home = () => {
+const Home = ({companyName}) => {
     const context = useContext(ProductContext);
     const {featuredProducts} = context;
     let [slider, setslider] = useState(0);
     const sliderImg = [img1, img2];
-    const bannerData = [
-        {
-            title: 'Distance Learning Center',
-            subtitle: 'Lorem ipsum dolor sit amet.',
-            children: ''
-        },
-        {
-            title: 'Online practical courses',
-            subtitle: 'Lorem ipsum dolor sit amet.',
-            children: 'Take a course'
-        },
-        {
-            title: 'Efficient Learning Methods',
-            subtitle: 'Lorem ipsum dolor sit amet.',
-            children: ''
-        }
-    ];
 
     const handleSlider = e => {
         const current = e.currentTarget.dataset.id;
@@ -54,16 +37,14 @@ const Home = () => {
             }
         }
     }
-    const bannerText = bannerData[slider];
+
     console.log(featuredProducts)
     return (
         <div className='home'>
             <StyledHero img ={sliderImg[slider]} className='heroBcg'>
                 <div className="center">
-                    <Banner title={bannerText.title} subtitle={bannerText.subtitle}>
-                        {
-                            bannerText.children !== '' ? bannerText.children : 'Discover more'
-                        }
+                    <Banner title={companyName}>
+                        Discover more
                     </Banner>
                 </div>
                 <div > 

@@ -14,7 +14,7 @@ import Error from "./pages/Error";
 const App = () => {
   return (
     <div className="App">
-      <Navbar companyName={'Known'} />
+      <Navbar companyName={'Hotel Ng'} />
 
       <Switch>
         <Route exact path='/' component={Home} />
