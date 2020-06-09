@@ -1,0 +1,67 @@
+.banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 35vh auto 0;
+    place-items: center;
+    color: var(--mainWhite);
+    line-height: 2.5;
+    letter-spacing: .2rem;
+    word-spacing: .5rem;
+    background: rgba(51, 51, 51, .8);
+
+    width: 57vw;
+    padding: 2rem 0 3rem;
+    padding: 2rem 1rem;
+}
+.banner h2{
+    text-transform: uppercase;
+}
+.banner h2 span{
+    margin-left: .6rem;
+    color: var(--red);
+}
+
+.banner > div {
+    width: 200px;
+    height: 2.0px;
+    place-self: center;
+    background: var(--red);
+}
+.banner p {
+    text-transform: capitalize;
+    word-spacing: .1rem;
+}
+.banner a > button {
+    margin-top: 10px;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    padding: .75rem 1.25rem;
+    transition: all 2s ease-in-out;
+    border: 1px solid var(--white);
+    color: var(--white);
+    background: transparent;
+    font-weight: 700;
+    cursor: pointer;
+}
+.banner a > button:hover {
+    background: var(--red);
+}
+
+
+/* Banner media queries */
+
+@media (max-width: 767px){
+    .banner{
+        width: 80vw;
+        margin: 37.5vh auto 0;
+    }
+    .banner h2 {
+        font-size: .75rem !important;
+    }
+    @media (max-width: 500px){
+        .banner{
+            width: 95vw;
+        }
+    }
+}

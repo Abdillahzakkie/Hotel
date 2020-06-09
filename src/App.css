@@ -1,0 +1,37 @@
+* , ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainWhite: #f1f5f8;
+    --white: #fff;
+    --red: #e73a3a;
+    --darkGrey: #333;
+    --mainGreen: #29ca8e;
+    --letterSpacing: .1rem;
+    --wordSpacing: .25rem;
+    --mainTransition : all 2s ease-in-out;
+}
+li {
+    list-style: none;
+    display: inline;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button, button:focus {
+    outline: none;
+    border: none;
+}
+.App {
+    overflow: hidden;
+}
+.center {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+}

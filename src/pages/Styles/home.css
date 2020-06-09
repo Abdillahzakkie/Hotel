@@ -1,0 +1,20 @@
+.heroBcg {
+    position: relative;
+}
+.prev, .next {
+    position: absolute;
+    top: 0vh;
+    height: 100%;
+    color: var(--darkGrey);
+    font-size: 2rem;
+    background: transparent;
+}
+.prev {
+    left: 0;
+    width: 50px;
+}
+.next {
+    right: 0;
+    width: 70px;
+    padding-right: 15px;
+}

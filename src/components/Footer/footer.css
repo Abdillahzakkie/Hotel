@@ -1,0 +1,11 @@
+.footer {
+    grid-template-rows: minmax(100px, auto);
+    place-items: center;
+    background: var(--darkGrey);
+    color: var(--mainWhite);
+    letter-spacing: .05rem;
+    word-spacing: .3rem;
+}
+.footer p {
+    padding: 0 .5rem;
+}

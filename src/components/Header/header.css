@@ -1,0 +1,37 @@
+.title {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    width: 100vw;
+    background: var(--mainWhite);
+    color: var(--darkGrey);
+    place-items: start;
+    text-transform: capitalize;
+}
+.title .card {
+    margin: auto auto 2px;
+    padding: .25rem 1rem;
+    place-content: center;
+}
+.title .card h1 {
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    word-spacing: .25rem;
+}
+.title .card select {
+    width: 250px;
+    height: 30px;
+    outline: none;
+}
+.title .card span {
+    text-transform: lowercase;
+}
+
+@media (max-width: 599px) {
+    .title {
+    padding: 1rem 0;
+    }
+    .title .card {
+        padding: 0;
+    }
+}

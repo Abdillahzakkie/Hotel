@@ -1,0 +1,48 @@
+import React, {useState, useContext} from 'react';
+import StyledHero from "../components/StyledHero/StyledHero";
+import Banner from "../components/Banner/Banner";
+import defaultBcg from "../assets/bg.jpeg";
+import "./Styles/facilities.css";
+import {ProductContext} from "../Context/ProductContext";
+import Card from '../components/Card/Card';
+import Header from '../components/Header/Header';
+
+
+const Facilities = () => {
+    const [inputState, setInputState] = useState('');
+    const context = useContext(ProductContext);
+    const {selectValue, handleSelectChange, category, sortedProducts} = context;
+
+
+    // Get unique category and map result
+    const selectOption = category.map(item => <option key={item}>{item}</option>);
+
+    const OptionButton = (
+        <select value={selectValue} onChange={handleSelectChange}>
+            {selectOption}
+        </select>
+    )
+    
+    const handleSearch = e => {
+        e.preventDefault();
+        console.log(inputState)
+    }
+
+    return (
+        <div className='facilities'>
+            <StyledHero img ={defaultBcg} height={70} className='heroBcg'>
+                <div className="center">
+                    <Banner title={'Hotel Ng'} subtitle={'Welcome message'}>Discover more</Banner>
+                </div>
+            </StyledHero>
+            <Header input1='Projects' input2={OptionButton}>
+                <form action="" onSubmit={handleSearch}>
+                    <input value={inputState} type="text" onChange={ e => setInputState(e.target.value)} />
+                </form>
+            </Header>
+            <Card cardItem={sortedProducts} />
+        </div>
+    )
+}
+
+export default Facilities
