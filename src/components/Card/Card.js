@@ -12,7 +12,7 @@ const Card = ({cardItem}) => {
                     {/* maximum characters 20 words */}
                     {item.name}
                 </h2>
-                <a href={item.slug} target='_blank' rel='noopener noreferrer'>
+                <a href='#' target='_blank' rel='noopener noreferrer'>
                     <button className="center features">features</button>
                 </a>
             </div>
