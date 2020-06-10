@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import defaultBcg from "../../images/slider-image1.jpg";
 import defaultBcg from "../../assets/hero.jpg";
 
 

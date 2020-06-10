@@ -13,7 +13,7 @@ const Card = ({cardItem}) => {
                     {/* maximum characters 20 words */}
                     {item.name}
                 </h2>
-                <Link to={`/rooms/${item.slug}`}>
+                <Link to={`/facilities/${item.slug}`}>
                     <button className="center features">features</button>
                 </Link>
             </div>
