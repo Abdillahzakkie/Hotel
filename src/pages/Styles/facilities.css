@@ -1,3 +1,12 @@
 .facilities .banner{
     margin: 25vh auto 0;
 }
+
+@media (max-width: 767px) {
+    .facilities .heroBcg{
+        height: 100vh;
+    }
+    .facilities .banner{
+        margin: 37.5vh auto 0;
+    }
+}

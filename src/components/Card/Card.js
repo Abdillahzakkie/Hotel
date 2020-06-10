@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import "./card.css";
 import Loading from "../Loading/Loading";
 
@@ -12,9 +13,9 @@ const Card = ({cardItem}) => {
                     {/* maximum characters 20 words */}
                     {item.name}
                 </h2>
-                <a href='#' target='_blank' rel='noopener noreferrer'>
+                <Link to={`/rooms/${item.slug}`}>
                     <button className="center features">features</button>
-                </a>
+                </Link>
             </div>
         )
     });

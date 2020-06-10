@@ -31,6 +31,10 @@
 .banner p {
     text-transform: capitalize;
     word-spacing: .1rem;
+
+    text-align: center;
+    line-height: 2;
+    margin: .5rem 0;
 }
 .banner a > button {
     margin-top: 10px;

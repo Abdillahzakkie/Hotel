@@ -14,7 +14,7 @@ export default [
       seller: "Johnny William",
     },
     fields: {
-      name: "Men Watch",
+      name: "product title",
       slug: "MenWatch",
       type: "normal",
       price: 25.5,
@@ -72,7 +72,7 @@ export default [
       seller: "Karry Pitcher"
     },
     fields: {
-      name: "men wears",
+      name: "product title",
       slug: "menwears",
       type: "normal",
       price: 30.25,
@@ -130,7 +130,7 @@ export default [
       seller: "Michael Soft"
     },
     fields: {
-      name: "women top",
+      name: "product title",
       slug: "womenstop",
       type: "low",
       price: 20.45,
@@ -188,7 +188,7 @@ export default [
       seller: "Mary Cool"
     },
     fields: {
-      name: "infinix hot 4 pro",
+      name: "product title",
       slug: "infinixhot4pro",
       type: "normal",
       price: 15.25,
@@ -246,9 +246,9 @@ export default [
       seller: "George Walker"
     },
     fields: {
-      name: "sneakers",
+      name: "product title",
       slug: "sneakers",
-      type: "normal",
+      type: "best",
       price: 12.25,
       quantity: 250,
       featured: true,
@@ -301,15 +301,15 @@ export default [
   {
     sys: {
       id: "6",
-      seller: "Kate Town"
+      seller: "kate town"
     },
     fields: {
-      name: "asus s15",
+      name: "product title",
       slug: "asuss15",
       type: "low",
       price: 22.50,
       quantity: 150,
-      featured: true,
+      featured: false,
       flash_deal: true,
       last_minute: false,
       reviews: 32,
@@ -359,15 +359,15 @@ export default [
   {
     sys: {
       id: "7",
-      seller: "Kate Town"
+      seller: "kate town"
     },
     fields: {
-      name: "asus s15",
+      name: "product title",
       slug: "asuss15",
-      type: "normal",
+      type: "best",
       price: 22.50,
       quantity: 150,
-      featured: true,
+      featured: false,
       flash_deal: true,
       last_minute: false,
       reviews: 32,
@@ -417,15 +417,15 @@ export default [
   {
     sys: {
       id: "8",
-      seller: "Kate Town"
+      seller: "kate town"
     },
     fields: {
-      name: "asus s15",
+      name: "product title",
       slug: "asuss15",
-      type: "normal",
+      type: "best",
       price: 22.50,
       quantity: 150,
-      featured: true,
+      featured: false,
       flash_deal: false,
       last_minute: true,
       reviews: 32,
@@ -475,10 +475,10 @@ export default [
   {
     sys: {
       id: "9",
-      seller: "Kate Town"
+      seller: "kate town"
     },
     fields: {
-      name: "asus s15",
+      name: "product title",
       slug: "asuss15",
       type: "normal",
       price: 22.50,
@@ -533,10 +533,10 @@ export default [
   {
     sys: {
       id: "10",
-      seller: "Kate Town"
+      seller: "kate town"
     },
     fields: {
-      name: "asus s15",
+      name: "product title",
       slug: "asuss15",
       type: "normal",
       price: 22.50,

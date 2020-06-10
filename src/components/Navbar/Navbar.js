@@ -2,8 +2,22 @@ import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import "./navbar.css";
 import {FaAlignRight} from "react-icons/fa";
-import Navlist from './Navlist';
 import logo from "../../assets/logo.jpg";
+
+
+let Navlist = [
+    { id: '/', name: 'home' },
+    { id: '/facilities', name: 'facilities' },
+    { id: '/rooms', name: 'rooms & rent' },
+    { id: '/contact', name: 'contact' },
+];
+Navlist = Navlist.map(item => {
+    return (
+        <Link key={item.id} to={item.id}>
+            <li>{item.name}</li>
+        </Link>
+    )
+});
 
 const Navbar = ({companyName}) => {
     const [navState, setNavState] = useState(false);

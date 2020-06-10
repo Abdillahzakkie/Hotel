@@ -1,0 +1,19 @@
+.product-section {
+    background: rgba(128, 128, 128, .09);
+    margin: 0 1.5rem 1rem;
+    padding: 2rem;
+    transition: var(--mainTransition);
+}
+.product-section:hover {
+    box-shadow: 2.5px 2.5px 10px 0 rgba(0, 0, 0, .5);
+}
+.product-section h2{
+    text-transform: capitalize;
+    line-height: 2;
+}
+.product-section p{
+    text-transform: lowercase;
+    line-height: 1.75;
+    letter-spacing: .02rem;
+    word-spacing: .05rem;
+}

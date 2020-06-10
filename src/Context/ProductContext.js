@@ -28,7 +28,7 @@ class ProductProvider extends Component {
             sortedProducts: products, 
             selectValue: 'all',
             category,
-            loading: true
+            loading: false
         })
     }
 
@@ -42,6 +42,9 @@ class ProductProvider extends Component {
         return tempItem
     }
 
+    // Get slug
+    getSlug = slug => this.state.products.find(item => item.slug === slug)
+
     // Get unique category
     getCategory = products => {
         const category = products.reduce((prev, next) => {
@@ -50,6 +53,7 @@ class ProductProvider extends Component {
             }
             return prev
         }, ['all']);
+
         return category
     }
 
@@ -69,11 +73,28 @@ class ProductProvider extends Component {
         }
     }
 
+
+    // Handle facilities search filter
+    // handleFacilitiesSearch = (e, inputState) => {
+    //     e.preventDefault();
+    //     const searchPara = inputState.toLowerCase()
+
+    //     const tempItem = this.state.products.filter(item => item.name === searchPara || item.seller === searchPara);
+    //     if (tempItem !== []) {
+    //         this.setState({sortedProducts: tempItem})
+    //     }
+
+    //     console.log(this.state.sortedProducts)
+    //     return tempItem
+    // }
+    
     render() {
         return (
             <ProductContext.Provider value={{
-                ...this.state, 
+                ...this.state,
+                getSlug: this.getSlug,
                 handleSelectChange: this.handleSelectChange,
+                // handleFacilitiesSearch: this.handleFacilitiesSearch
             }}>
                 {this.props.children}
             </ProductContext.Provider>

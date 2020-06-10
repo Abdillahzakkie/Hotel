@@ -2,9 +2,11 @@ import React from 'react'
 import StyledHero from "../components/StyledHero/StyledHero";
 import Banner from "../components/Banner/Banner";
 import mainImg from "../assets/hero.jpeg";
+
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 
-const Contact = () => {
+
+const Rooms_Rent = () => {
     return (
         <>
             <StyledHero img ={mainImg} className='heroBcg'>
@@ -18,4 +20,4 @@ const Contact = () => {
     )
 }
 
-export default ErrorBoundary(Contact)
+export default ErrorBoundary(Rooms_Rent)

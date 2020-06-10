@@ -7,6 +7,9 @@ import {ProductContext} from "../Context/ProductContext";
 import Card from '../components/Card/Card';
 import Header from '../components/Header/Header';
 
+import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
+
+
 
 const Facilities = () => {
     const [inputState, setInputState] = useState('');
@@ -22,12 +25,6 @@ const Facilities = () => {
             {selectOption}
         </select>
     )
-    
-    const handleSearch = e => {
-        e.preventDefault();
-        console.log(inputState)
-    }
-
     return (
         <div className='facilities'>
             <StyledHero img ={defaultBcg} height={70} className='heroBcg'>
@@ -36,7 +33,7 @@ const Facilities = () => {
                 </div>
             </StyledHero>
             <Header input1='Projects' input2={OptionButton}>
-                <form action="" onSubmit={handleSearch}>
+                <form action="">
                     <input value={inputState} type="text" onChange={ e => setInputState(e.target.value)} />
                 </form>
             </Header>
@@ -45,4 +42,4 @@ const Facilities = () => {
     )
 }
 
-export default Facilities
+export default ErrorBoundary(Facilities)

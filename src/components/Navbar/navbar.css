@@ -1,15 +1,16 @@
 .navbar {
     grid-template-columns: 2fr 4fr;
     grid-template-rows: minmax(80px, 1fr);
-    border-top: 5px solid var(--mainGreen);
+    border-top: 5px solid var(--darkGrey);
     background: var(--mainWhite);
-    color: var(--darkGray);
+    color: var(--darkGrey);
     /* transition: var(--mainTransition); */
     width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+    box-shadow: 0 10px 7px rgba(0, 0, 0, .5);
 }
 
 /* Nav-brand */
@@ -92,7 +93,7 @@
         line-height: 2.5;
     }
     .nav-mobile a:hover {
-        background: var(--mainGreen);
+        background: var(--darkGrey);
         color: var(--white);
     }
 }
