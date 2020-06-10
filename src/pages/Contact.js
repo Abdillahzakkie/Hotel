@@ -13,7 +13,7 @@ const Contact = () => {
         <>
             <StyledHero img ={mainImg} className='heroBcg'>
                 <div className="center">
-                    <Banner title={'Hotel Ng'} subtitle={'This page is still under build'}>
+                    <Banner title={'Contact page'} subtitle={'This page is still under build'}>
                         return to home
                     </Banner>
                 </div>
