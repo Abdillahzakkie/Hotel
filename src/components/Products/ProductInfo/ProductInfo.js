@@ -1,5 +1,6 @@
 import React from 'react';
 import "../products.css";
+import { Link } from 'react-router-dom';
 
 const ProductInfo = (props) => {
     const {seller, name, price, quantity, reviews} = props;
@@ -12,6 +13,8 @@ const ProductInfo = (props) => {
             <p>price : {`$${price}`}</p>
             <p>quantity : {quantity}</p>
             <p>reviews : {reviews}</p>
+
+            <Link to='/' className='product-checkout'>checkout</Link>
         </section>
     )
 }

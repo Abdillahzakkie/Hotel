@@ -55,6 +55,7 @@
     color: var(--mainWhite);
     transition: var(--mainTransition);
     text-transform: capitalize;
+    cursor: pointer;
 }
 .services .card:hover .features{
     opacity: 1;

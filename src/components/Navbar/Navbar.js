@@ -8,7 +8,7 @@ import logo from "../../assets/logo.jpg";
 let Navlist = [
     { id: '/', name: 'home' },
     { id: '/facilities', name: 'facilities' },
-    { id: '/rooms', name: 'rooms & rent' },
+    { id: '/about', name: 'about' },
     { id: '/contact', name: 'contact' },
 ];
 Navlist = Navlist.map(item => {

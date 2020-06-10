@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Facilities from "./pages/Facilities";
 import Contact from "./pages/Contact";
-import Rooms_Rent from "./pages/Rooms_Rent";
+import About from "./pages/About";
 import SingleProduct from "./pages/SingleProduct";
 import Error from "./pages/Error";
 
@@ -20,8 +20,8 @@ const App = () => {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/facilities' component={Facilities} />
-        <Route exact path='/rooms' component={Rooms_Rent} />
-        <Route exact path='/rooms/:slug' component={SingleProduct} />
+        <Route exact path='/facilities/:slug' component={SingleProduct} />
+        <Route exact path='/about' component={About} />
         <Route exact path='/contact' component={Contact} />
         <Route component={Error} />
       </Switch>
