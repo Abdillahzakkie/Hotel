@@ -1,4 +1,5 @@
 import React, {useState, useContext} from 'react';
+import {Link} from "react-router-dom";
 import "./Styles/home.css";
 import {ProductContext} from "../Context/ProductContext";
 import StyledHero from "../components/StyledHero/StyledHero";
@@ -63,8 +64,9 @@ const Home = ({companyName}) => {
                 </div>
             </StyledHero>
             <section className='center section'>
+                <div> <img src={side_img} alt=""/> </div>
                 <div>
-                    <h2>Little About B Hotel</h2>
+                    <h2>First Class Services</h2>
                     <p>
                         B Hotel is the tallest hospitality building in Nigeria, 
                         and with its terraces, it offers splendid views of the Lagos city, 
@@ -72,15 +74,16 @@ const Home = ({companyName}) => {
                         from Ikoyi Club; with its proximity to Silverbird Cinemas and Embassies, 
                         it has the right location for guests to enjoy their stay.
                     </p>
-                    <button>read more</button>
+                    <Link to='/about'>
+                        <button>read more</button>
+                    </Link>
                 </div>
-                <div> <img src={side_img} alt=""/> </div>
             </section>
 
             <section className='center section'>
                 <div> <img src={side_img} alt=""/> </div>
                 <div>
-                    <h2>First Class Services</h2>
+                    <h2>Little About B Hotel</h2>
                     <p>
                         B Hotel is the tallest hospitality building in Nigeria, 
                         and with its terraces, it offers splendid views of the Lagos city, 

@@ -32,11 +32,7 @@ const Facilities = () => {
                     <Banner title={'Hotel Ng'} subtitle={'Welcome message'}>Discover more</Banner>
                 </div>
             </StyledHero>
-            <Header input1='Projects' input2={OptionButton}>
-                <form action="">
-                    <input value={inputState} type="text" onChange={ e => setInputState(e.target.value)} />
-                </form>
-            </Header>
+            <Header input1='Projects' input2={OptionButton} />
             <Card cardItem={sortedProducts} />
         </div>
     )
