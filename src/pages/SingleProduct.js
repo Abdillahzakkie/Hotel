@@ -28,7 +28,7 @@ const SingleProduct = props => {
         <>
             <StyledHero img ={mainImg} className='heroBcg'>
                 <div className="center">
-                    <Banner title={name} subtitle={seller}>Discover more</Banner>
+                    <Banner title={name} subtitle={seller}>return to store</Banner>
                 </div>
             </StyledHero>
             <div className='single-product'>

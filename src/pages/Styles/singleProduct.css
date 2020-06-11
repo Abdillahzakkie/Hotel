@@ -22,9 +22,11 @@
 
 /* Product extras */
 .single-product .extras{
-    width: 100vw;
+    width: 95vw;
     height: auto;
     padding: 3rem;
+    background: var(--mainWhite);
+    margin: 2rem auto;
 }
 .single-product .extras h3{
     text-transform: capitalize;
@@ -51,13 +53,14 @@
     .single-product .product-container {
         grid-template-columns: 1fr;
     }
+    .single-product .extras { width: 85vw; }
 
     .single-product .extras ul li{
         display: block;
         padding: .75rem;
         word-spacing: 1.5px;
         letter-spacing: 1px;
-        line-height: 1.2;
+        line-height: 1.4;
     }
 }
 @media (min-width: 665px) and (max-width: 1204px) {

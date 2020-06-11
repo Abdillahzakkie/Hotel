@@ -46,9 +46,7 @@ const Home = ({companyName}) => {
         <div className='home'>
             <StyledHero img ={sliderImg[slider]} className='heroBcg'>
                 <div className="center">
-                    <Banner title={companyName} to={'/facilities'}>
-                        Discover more
-                    </Banner>
+                    <Banner title={companyName} to={'/facilities'} />
                 </div>
                 <div > 
                     <button 
