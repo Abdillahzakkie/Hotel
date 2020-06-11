@@ -1,9 +1,9 @@
-import img1 from "./assets/product1.png";
-import img2 from "./assets/product2.png";
-import img3 from "./assets/product3.png";
-import img4 from "./assets/product4.png";
-import img5 from "./assets/product5.jpg";
-import img6 from "./assets/product6.png";
+import img1 from "./assets/home1.jpg";
+import img2 from "./assets/home2.jpg";
+import img3 from "./assets/home3.jpg";
+import img4 from "./assets/home4.jpg";
+import img5 from "./assets/home5.jpg";
+import img6 from "./assets/home6.jpg";
 
 
 
