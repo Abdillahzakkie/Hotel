@@ -46,8 +46,9 @@
     text-transform: capitalize;
     letter-spacing: .2rem;
     cursor: pointer;
-    background: blue;
+    background: #333;
     color: var(--mainWhite);
+    border-radius: .5rem;
 }
 
 @media (max-width: 767px) {

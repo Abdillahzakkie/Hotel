@@ -15,7 +15,7 @@ export default [
     },
     fields: {
       name: "product title",
-      slug: "MenWatch",
+      slug: "product1",
       type: "normal",
       price: 25.5,
       quantity: 200,
@@ -73,7 +73,7 @@ export default [
     },
     fields: {
       name: "product title",
-      slug: "menwears",
+      slug: "product2",
       type: "normal",
       price: 30.25,
       quantity: 600,
@@ -131,7 +131,7 @@ export default [
     },
     fields: {
       name: "product title",
-      slug: "womenstop",
+      slug: "product3",
       type: "low",
       price: 20.45,
       quantity: 1000,
@@ -189,7 +189,7 @@ export default [
     },
     fields: {
       name: "product title",
-      slug: "infinixhot4pro",
+      slug: "product4",
       type: "normal",
       price: 15.25,
       quantity: 100,
@@ -247,7 +247,7 @@ export default [
     },
     fields: {
       name: "product title",
-      slug: "sneakers",
+      slug: "product5",
       type: "best",
       price: 12.25,
       quantity: 250,
@@ -305,7 +305,7 @@ export default [
     },
     fields: {
       name: "product title",
-      slug: "asuss15",
+      slug: "product6",
       type: "low",
       price: 22.50,
       quantity: 150,
@@ -363,7 +363,7 @@ export default [
     },
     fields: {
       name: "product title",
-      slug: "asuss15",
+      slug: "product7",
       type: "best",
       price: 22.50,
       quantity: 150,
@@ -421,7 +421,7 @@ export default [
     },
     fields: {
       name: "product title",
-      slug: "asuss15",
+      slug: "product8",
       type: "best",
       price: 22.50,
       quantity: 150,
@@ -479,7 +479,7 @@ export default [
     },
     fields: {
       name: "product title",
-      slug: "asuss15",
+      slug: "product9",
       type: "normal",
       price: 22.50,
       quantity: 150,
@@ -537,7 +537,7 @@ export default [
     },
     fields: {
       name: "product title",
-      slug: "asuss15",
+      slug: "product10",
       type: "normal",
       price: 22.50,
       quantity: 150,

@@ -1,10 +1,8 @@
 .navbar {
     grid-template-columns: 2fr 4fr;
     grid-template-rows: minmax(80px, 1fr);
-    border-top: 5px solid var(--darkGrey);
     background: var(--mainWhite);
     color: var(--darkGrey);
-    /* transition: var(--mainTransition); */
     width: 100vw;
     position: fixed;
     top: 0;
@@ -38,7 +36,7 @@
 .nav-links {
     margin: auto 0;
     place-self: end;
-    padding-right: 1rem;
+    padding-right: 2rem;
 }
 .nav-links ul li {
     padding: 0 .5rem;
@@ -77,8 +75,7 @@
     /* Nav links */
     .nav-links {
         width: 100vw;
-        /* place-self: start; */
-        /* transition: var(--mainTransition); */
+        padding-right: 0;
         border-top: 1.5px solid var(--white);
     }
     .nav-mobile {
@@ -87,7 +84,6 @@
         grid-template-rows: auto;
         font-size: 1rem;
         padding: .75rem;
-        /* width: 100vw; */
     }
     .nav-mobile a {
         line-height: 2.5;
