@@ -13,9 +13,10 @@ import Error from "./pages/Error";
 
 
 const App = () => {
+  const companyName = 'B Hotel';
   return (
     <div className="App">
-      <Navbar companyName={'Hotel Ng'} />
+      <Navbar companyName={companyName} />
 
       <Switch>
         <Route exact path='/' component={Home} />
@@ -26,7 +27,7 @@ const App = () => {
         <Route component={Error} />
       </Switch>
       
-      <Footer companyName={'Known'} />
+      <Footer companyName={companyName} />
     </div>
   );
 }

@@ -22,18 +22,18 @@ const SingleProduct = props => {
     const {seller, name, price, images, reviews, quantity, extras, description} = products;
 
     const [mainImg, ...rest] = images;
-    const ProductImage = rest.map((item, i) => <img key={i} src={item} alt={name} />);
+    const ProductImage = rest.map((item, i) => <div className='image'><img key={i} src={item} alt={name} /></div>);
 
     return (
         <>
             <StyledHero img ={mainImg} className='heroBcg'>
                 <div className="center">
-                    <Banner title={name} subtitle={seller}>Discover more</Banner>
+                    <Banner title={name} subtitle={seller}>return to store</Banner>
                 </div>
             </StyledHero>
             <div className='single-product'>
                 <section className='center products-image'>
-                    <div className="center img">{ProductImage}</div>
+                    {ProductImage}
                 </section>
                 <section className='center product-container'>
                     <ProductDetail description={description} />

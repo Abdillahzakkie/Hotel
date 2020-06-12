@@ -1,7 +1,7 @@
-.heroBcg {
+.home .heroBcg {
     position: relative;
 }
-.prev, .next {
+.home .prev, .home .next {
     position: absolute;
     top: 0vh;
     height: 100%;
@@ -9,38 +9,50 @@
     font-size: 2rem;
     background: transparent;
 }
-.prev {
+.home .prev {
     left: 0;
     width: 50px;
 }
-.next {
+.home .next {
     right: 0;
     width: 70px;
     padding-right: 15px;
 }
 
-.section {
+.home .section {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(100px, 1fr);
-    background: #f1f5f8;
-    grid-column-gap: 1rem;
-    border: 2px solid #333;
-    padding: 2rem;
-    margin: 2rem 0;
+    grid-template-rows: minmax(250px, 1fr);
+    background: transparent;
+    border: none;
+    padding: 1rem;
 }
-.section img {
+
+.home .section div:nth-child(even) {
+    background: var(--mainWhite);
+    padding: 1rem;
+    line-height: 1.75;
+}
+.home .section div:nth-child(even) h2{
+    text-align: center;
+    line-height: 2;
+}
+.home .section img {
     width: 100%;
     height: 100%;
 }
-.section button {
-    padding: .5rem;
+.home .section button {
+    padding: .75rem 1rem;
     margin: 1rem 0;
     text-transform: capitalize;
     letter-spacing: .2rem;
+    cursor: pointer;
+    background: #333;
+    color: var(--mainWhite);
+    border-radius: .5rem;
 }
 
 @media (max-width: 767px) {
-    .section {
+    .home .section {
         grid-template-columns: 1fr;
     }
 }

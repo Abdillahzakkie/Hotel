@@ -12,7 +12,9 @@ const Banner = ({children, title, titleSpan, subtitle, to}) => {
             <div />
             <p>{subtitle || 'Welcome message'}</p>
             <Link to= {to ? to : '/'}>
-                <button>{children}</button>
+                <button>
+                    {children ? children : 'discover more'}
+                </button>
             </Link>
         </div>
     )

@@ -1,7 +1,4 @@
 import React from 'react';
-import {FiPhoneIncoming} from "react-icons/fi";
-import {GoLocation} from "react-icons/go";
-import {BsEnvelope} from "react-icons/bs";
 import StyledHero from "../components/StyledHero/StyledHero";
 import Banner from "../components/Banner/Banner";
 import mainImg from "../assets/hero.jpeg";
@@ -10,7 +7,7 @@ import "./Styles/contact.css";
 
 const Contact = () => {
     return (
-        <>
+        <div className='center contact'>
             <StyledHero img ={mainImg} className='heroBcg'>
                 <div className="center">
                     <Banner title={'Contact page'} subtitle={'This page is still under build'}>
@@ -18,26 +15,21 @@ const Contact = () => {
                     </Banner>
                 </div>
             </StyledHero>
-            <section className='center section'>
-                <div className='contact-info'> 
-                    <FiPhoneIncoming />
-                    <GoLocation />
-                    <BsEnvelope />
-                </div>
-                <div>
-                    <h2>First Class Services</h2>
-                    <p>
-                        B Hotel is the tallest hospitality building in Nigeria, 
-                        and with its terraces, it offers splendid views of the Lagos city, 
-                        most importantly the Lagos Port and Lagos skyline. 
-                        It is a 10 minutes drive away from Ikoyi Club; 
-                        with its proximity to Silverbird Cinemas and Embassies, 
-                        it has the right location for guests to enjoy their stay.
-                    </p>
-                    <button>reserve</button>
-                </div>
-            </section>
-        </>
+            <div className="center contact-container">
+                <section className='box'>
+                    <div className='center'>
+                        <h1>b hotel comapny</h1>
+                        <div />
+                        <p>Seattle, WA 98122</p>
+                        <p>info@bhotel.com</p>
+                        <p>P 206.219.5599 | F 206.973.5350</p>
+                    </div>
+                </section>
+                <section className="box">
+                    hello world
+                </section>
+            </div>
+        </div>
     )
 }
 

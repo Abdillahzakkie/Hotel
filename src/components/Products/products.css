@@ -20,8 +20,7 @@
 
 /* Checkout button */
 .product-section .product-checkout{
-    /* background: green; */
-    border: .1rem solid green;
+    border: .1rem solid var(--darkGrey);
     padding: 1rem;
     line-height: 5;
     border-radius: 5rem;
@@ -31,6 +30,7 @@
 }
 
 .product-section .product-checkout:hover{
-    background: green;
-    color: var(--mainWhite);
+    border: .1rem solid var(--white);
+    background: transparent;
+    color: var(--darkGrey);
 }

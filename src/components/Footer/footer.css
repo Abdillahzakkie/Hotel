@@ -5,7 +5,9 @@
     color: var(--mainWhite);
     letter-spacing: .05rem;
     word-spacing: .3rem;
+    padding: .5rem;
 }
 .footer p {
     padding: 0 .5rem;
+    text-align: center;
 }

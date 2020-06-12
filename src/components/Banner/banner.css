@@ -65,7 +65,7 @@
     }
     @media (max-width: 500px){
         .banner{
-            width: 95vw;
+            width: 100vw;
         }
     }
 }
