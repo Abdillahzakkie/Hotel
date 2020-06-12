@@ -1,28 +1,36 @@
-.section {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(100px, 1fr);
-    background: #f1f5f8;
-    grid-column-gap: 1rem;
-    border: 2px solid #333;
-    padding: 2rem;
-    margin: 2rem 0;
+.contact .contact-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+    height: 70vh;
+    margin: 0 auto;
 }
-.section .contact-info{
-    grid-template-columns: 1fr;
+.contact .contact-container .box:nth-child(odd){
+    background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        url('../../assets/hero.jpg') center/cover no-repeat;
+    color: var(--mainWhite);
 }
-.section img {
-    width: 100%;
-    height: 100%;
+.contact-container .box:nth-child(odd) .center{
+    place-items: center;
+    margin: 12.5vh auto;
+    line-height: 3;
 }
-.section button {
-    padding: .5rem;
-    margin: 1rem 0;
+.contact-container .box:nth-child(odd) .center h1{
     text-transform: capitalize;
-    letter-spacing: .2rem;
+    letter-spacing: .15rem;
+    word-spacing: .2rem;
+}
+.contact-container .box:nth-child(odd) .center > div{
+    margin: auto;
+    width: 20%;
+    height: .25rem;
+    background: var(--darkGrey);
 }
 
 @media (max-width: 767px) {
-    .section {
+    .contact .contact-container {
         grid-template-columns: 1fr;
+    }
+    .contact-container .box:nth-child(odd){
+        display: none;
     }
 }

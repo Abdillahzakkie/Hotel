@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useContext} from 'react';
 import StyledHero from "../components/StyledHero/StyledHero";
 import Banner from "../components/Banner/Banner";
 import defaultBcg from "../assets/bg.jpeg";
@@ -12,7 +12,6 @@ import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 
 
 const Facilities = () => {
-    const [inputState, setInputState] = useState('');
     const context = useContext(ProductContext);
     const {selectValue, handleSelectChange, category, sortedProducts} = context;
 
