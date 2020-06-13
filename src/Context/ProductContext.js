@@ -43,14 +43,12 @@ class ProductProvider extends Component {
     }
 
     // Get slug
-    getSlug = slug => this.state.products.find(item => item.slug === slug)
+    getSlug = slug => this.state.products.find(item => item.slug === slug);
 
     // Get unique category
     getCategory = products => {
         const category = products.reduce((prev, next) => {
-            if(!prev.includes(next.type)) {
-                prev.push(next.type)
-            }
+            if(!prev.includes(next.type)) { prev.push(next.type) }
             return prev
         }, ['all']);
 
@@ -72,29 +70,12 @@ class ProductProvider extends Component {
             this.setState({selectValue: currentValue, sortedProducts: tempItem});
         }
     }
-
-
-    // Handle facilities search filter
-    // handleFacilitiesSearch = (e, inputState) => {
-    //     e.preventDefault();
-    //     const searchPara = inputState.toLowerCase()
-
-    //     const tempItem = this.state.products.filter(item => item.name === searchPara || item.seller === searchPara);
-    //     if (tempItem !== []) {
-    //         this.setState({sortedProducts: tempItem})
-    //     }
-
-    //     console.log(this.state.sortedProducts)
-    //     return tempItem
-    // }
-    
     render() {
         return (
             <ProductContext.Provider value={{
                 ...this.state,
                 getSlug: this.getSlug,
                 handleSelectChange: this.handleSelectChange,
-                // handleFacilitiesSearch: this.handleFacilitiesSearch
             }}>
                 {this.props.children}
             </ProductContext.Provider>
