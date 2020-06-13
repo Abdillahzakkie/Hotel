@@ -36,7 +36,7 @@
 .nav-links {
     margin: auto 0;
     place-self: end;
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 .nav-links ul li {
     padding: 0 .5rem;
@@ -75,7 +75,7 @@
     /* Nav links */
     .nav-links {
         width: 100vw;
-        padding: 0 .5rem;
+        padding-right: 0;
         border-top: 1.5px solid var(--white);
     }
     .nav-mobile {
