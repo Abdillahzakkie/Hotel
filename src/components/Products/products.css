@@ -30,7 +30,6 @@
 }
 
 .product-section .product-checkout:hover{
-    /* border: .1rem solid var(--white); */
     background: var(--darkGrey);
     color: var(--white);
 }
