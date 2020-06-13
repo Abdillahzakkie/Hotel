@@ -75,7 +75,7 @@
     /* Nav links */
     .nav-links {
         width: 100vw;
-        padding-right: 1rem;
+        padding: 0 .5rem;
         border-top: 1.5px solid var(--white);
     }
     .nav-mobile {
