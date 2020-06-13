@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className='center footer'>
             <p>
-                copyright &copy; {getYear} Izaat Clothing Company
+                copyright &copy; {getYear} B Hotel Company
             </p>
         </div>
     )
