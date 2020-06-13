@@ -31,7 +31,7 @@
 .services .card:hover img{
     /* takes up the total height of the box */
     height: 250px;
-    transform: scale(1.);
+    /* transform: scale(1.); */
     opacity: .7;
 }
 .services .card h2{
