@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-// import {Link} from "react-router-dom";
 import "./Styles/home.css";
 import {ProductContext} from "../Context/ProductContext";
 import StyledHero from "../components/StyledHero/StyledHero";
