@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
-import StyledHero from "../components/StyledHero/StyledHero";
-import Banner from "../components/Banner/Banner";
+import React, { useState } from 'react';
+import Navbar from '../components/Navbar/Navbar';
 import mainImg from "../assets/hero.jpeg";
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
-import "./Styles/contact.css";
+import "./Styles/my-account.css";
 
 const Contact = () => {
     const [input1, setInput1] = useState('');
@@ -12,19 +11,17 @@ const Contact = () => {
 
     return (
         <div className='center contact'>
-            <StyledHero img ={mainImg} className='heroBcg'>
-                <div className="center">
-                    <Banner title={'Contact page'} subtitle={'This page is still under build'}>
-                        return to home
-                    </Banner>
-                </div>
-            </StyledHero>
+            <Navbar background={mainImg} 
+                title='Contact page' 
+                subtitle='This page is still under build'
+                optionalText='return to home'
+            />
             <div className="center contact-container">
                 <section className="center section">
                     <h2>contact us</h2>
                     
                 </section>
-                <section className="section">
+                <section className="center section">
                     <h2>contact us</h2>
                     <form action="" className='center form-group'>
                         <input value={input1} 

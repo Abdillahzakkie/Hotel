@@ -12,10 +12,9 @@ import "./Styles/singleProduct.css";
 
 const SingleProduct = props => {
     const context = useContext(ProductContext);
-    const {getSlug, loading} = context;
-    
-    let products = getSlug(props.match.params.id);
 
+    const {getSlug, loading} = context;
+    let products = getSlug(props.match.params.id);
     if(!context || loading) { return <Loading /> }
     if(!products) { return <Error /> }
 
@@ -24,8 +23,8 @@ const SingleProduct = props => {
     const [mainImg, ...rest] = images;
     const ProductImage = rest.map((item, i) => {
         return (
-            <div className='image'>
-                <img key={i} src={item} alt={name} />
+            <div className='image' key={i}>
+                <img src={item} alt={name} />
             </div>
         )
     });
@@ -34,7 +33,7 @@ const SingleProduct = props => {
         <>
             <Navbar background={mainImg} 
                 title={name} subtitle={seller} 
-                optionalText={"return to store"} 
+                optionalText='return to store' 
             />
             <div className='single-product'>
                 <section className='center products-image'>

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./header.css";
 
-const Header = ({ children, input1, input2 }) => {
+const Header = ({ input1, input2 }) => {
     return (
         <div className='center title'>
             <div className="card">
@@ -9,9 +9,6 @@ const Header = ({ children, input1, input2 }) => {
             </div>
             <div className="card">
                 {input2}
-            </div>
-            <div className="card">
-                {children}
             </div>
         </div>
     )

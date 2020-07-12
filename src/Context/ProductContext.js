@@ -45,6 +45,9 @@ class ProductProvider extends Component {
     // Get slug
     getSlug = id => this.state.products.find(item => item.id === id);
 
+    // Get featured projects
+    getFeatured = products => products.filter(products => products.featured === true);
+
     // Get unique category
     getCategory = products => {
         const category = products.reduce((prev, next) => {
@@ -55,16 +58,16 @@ class ProductProvider extends Component {
         return category
     }
 
-    // Get featured projects
-    getFeatured = products => products.filter(products => products.featured === true);
-
     // Handles select option change
     handleSelectChange = (e, {products} = this.state) => {
+        console.log('Testing')
         // Get current value
         const currentValue = e.currentTarget.value;
 
         // update 
-        if (currentValue === 'all') this.setState({selectValue: currentValue, sortedProducts: products});
+        if (currentValue === 'all') {
+            return this.setState({selectValue: currentValue, sortedProducts: products})
+        }
          else {
             const tempItem = products.filter(item => item.type === currentValue);
             this.setState({selectValue: currentValue, sortedProducts: tempItem});
