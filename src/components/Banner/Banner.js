@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import './banner.css';
 
 
-const Banner = ({children, title, titleSpan, subtitle, to}) => {
+const Banner = ({optionalText, title, titleSpan, subtitle, to}) => {
     return (
         <div className='banner'>
             <h2>{title || 'Company name'} 
@@ -13,7 +13,7 @@ const Banner = ({children, title, titleSpan, subtitle, to}) => {
             <p>{subtitle || 'Welcome message'}</p>
             <Link to= {to ? to : '/'}>
                 <button>
-                    {children ? children : 'discover more'}
+                    {optionalText ? optionalText : 'discover more'}
                 </button>
             </Link>
         </div>

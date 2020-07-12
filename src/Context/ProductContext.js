@@ -43,7 +43,7 @@ class ProductProvider extends Component {
     }
 
     // Get slug
-    getSlug = slug => this.state.products.find(item => item.slug === slug);
+    getSlug = id => this.state.products.find(item => item.id === id);
 
     // Get unique category
     getCategory = products => {

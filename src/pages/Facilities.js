@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import StyledHero from "../components/StyledHero/StyledHero";
+import Navbar from '../components/Navbar/Navbar';
 import Banner from "../components/Banner/Banner";
 import defaultBcg from "../assets/bg.jpeg";
 import "./Styles/facilities.css";
@@ -25,12 +25,8 @@ const Facilities = () => {
         </select>
     )
     return (
-        <div className='facilities'>
-            <StyledHero img ={defaultBcg} height={70} className='heroBcg'>
-                <div className="center">
-                    <Banner title={'Hotel Ng'} subtitle={'Welcome message'}>Discover more</Banner>
-                </div>
-            </StyledHero>
+        <div className='facilities'  >
+            <Navbar title='Hotel Ng' optionalText='Discover more'/>
             <Header input1='Projects' input2={OptionButton} />
             <Card cardItem={sortedProducts} />
         </div>

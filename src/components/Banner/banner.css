@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    margin: 35vh auto 0;
+    /* margin: 35vh auto 0; */
+    margin: 20vh auto 0;
     place-items: center;
     color: var(--mainWhite);
     line-height: 2.5;

@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className='center footer'>
             <p>
-                copyright &copy; {getYear} B Hotel Company
+                &copy; {getYear} DragonLord, All Rights Reserved - Designed & Built with 💖 by DragonLord.
             </p>
         </div>
     )

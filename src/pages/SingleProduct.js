@@ -1,43 +1,49 @@
 import React, {useContext} from 'react';
 import {ProductContext} from '../Context/ProductContext';
-import "./Styles/singleProduct.css";
-import StyledHero from '../components/StyledHero/StyledHero';
-import Banner from "../components/Banner/Banner";
+import Navbar from '../components/Navbar/Navbar';
 import Loading from '../components/Loading/Loading';
 
 import ProductDetail from "../components/Products/ProductDetail/ProductDetail";
 import ProductInfo from "../components/Products/ProductInfo/ProductInfo";
 import Error from "./Error";
+import "./Styles/singleProduct.css";
+
 
 
 const SingleProduct = props => {
     const context = useContext(ProductContext);
     const {getSlug, loading} = context;
     
-    let products = getSlug(props.match.params.slug);
+    let products = getSlug(props.match.params.id);
 
-    if(!context || loading) {return <Loading />}
-    if(!products) {return <Error />}
+    if(!context || loading) { return <Loading /> }
+    if(!products) { return <Error /> }
 
     const {seller, name, price, images, reviews, quantity, extras, description} = products;
 
     const [mainImg, ...rest] = images;
-    const ProductImage = rest.map((item, i) => <div className='image'><img key={i} src={item} alt={name} /></div>);
+    const ProductImage = rest.map((item, i) => {
+        return (
+            <div className='image'>
+                <img key={i} src={item} alt={name} />
+            </div>
+        )
+    });
 
     return (
         <>
-            <StyledHero img ={mainImg} className='heroBcg'>
-                <div className="center">
-                    <Banner title={name} subtitle={seller}>return to store</Banner>
-                </div>
-            </StyledHero>
+            <Navbar background={mainImg} 
+                title={name} subtitle={seller} 
+                optionalText={"return to store"} 
+            />
             <div className='single-product'>
                 <section className='center products-image'>
                     {ProductImage}
                 </section>
                 <section className='center product-container'>
                     <ProductDetail description={description} />
-                    <ProductInfo seller={seller} 
+                    <ProductInfo 
+                        seller={seller} 
                         name={name} price={price} quantity={quantity} 
                         reviews={reviews}
                     />

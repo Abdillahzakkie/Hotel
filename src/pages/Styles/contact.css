@@ -1,36 +1,63 @@
 .contact .contact-container {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
     width: 100vw;
-    height: 70vh;
-    margin: 0 auto;
-}
-.contact .contact-container .box:nth-child(odd){
-    background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)),
-        url('../../assets/hero.jpg') center/cover no-repeat;
-    color: var(--mainWhite);
-}
-.contact-container .box:nth-child(odd) .center{
-    place-items: center;
-    margin: 12.5vh auto;
-    line-height: 3;
-}
-.contact-container .box:nth-child(odd) .center h1{
-    text-transform: capitalize;
-    letter-spacing: .15rem;
-    word-spacing: .2rem;
-}
-.contact-container .box:nth-child(odd) .center > div{
-    margin: auto;
-    width: 20%;
-    height: .25rem;
+    border-bottom: .1rem solid var(--mainWhite);
     background: var(--darkGrey);
 }
+.contact-container .section{
+    width: 100%;
+    padding: 2rem;
+    color: var(--white);
+}
+.contact-container .section:nth-child(odd) {
+    border-right: 1rem solid var(--white);
+}
+.contact-container .section h2{
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.contact-container .section .form-group{
+    width: 80%;
+}
+.contact-container .section .form-group input{
+    height: 50px;
+    margin: 1rem 0;
+    outline: none;
+    border: none;
+}
+.contact-container .section .form-group textarea{
+    height: 80px;
+    margin: 1rem 0;
+    outline: none;
+    border: none;
+    padding: .5rem 1rem 0;
+}
+.contact-container .section .form-group button{
+    height: 50px;
+    width: 30%;
+    cursor: pointer;
+    background: transparent;
+    border: .125rem solid var(--white);
+    letter-spacing: .25rem;
+    text-transform: capitalize;
+    color: inherit;
+}
+.contact-container .form-group input,
+.contact-container .form-group textarea{
+    padding: 0 1.0rem;
+}
+
 
 @media (max-width: 767px) {
     .contact .contact-container {
         grid-template-columns: 1fr;
     }
-    .contact-container .box:nth-child(odd){
-        display: none;
+
+    /* Contact form */
+    .contact-container .section .form-group button{
+        height: 50px;
+        width: 100%;
     }
 }
