@@ -1,10 +1,11 @@
 import React from 'react';
-import {Link} from "react-router-dom";
-import "./card.css";
+import { Link } from 'react-router-dom';
 import Loading from "../Loading/Loading";
+import "./card.css";
 
-const Card = ({cardItem}) => {
+export default function Card({cardItem}) {
     if(!cardItem) { return <Loading /> }
+
     const filteredProjects = cardItem.map(item => {
         return (
             <div key={item.id} className="center card">
@@ -13,20 +14,11 @@ const Card = ({cardItem}) => {
                     {/* maximum characters 20 words */}
                     {item.name}
                 </h2>
-                <Link to={`/facilities/${item.slug}`}>
+                <Link to={`/facilities/${item.id}`}>
                     <button className="center features">features</button>
                 </Link>
             </div>
         )
     });
-
-    return (
-        <div className='services-container'>
-            <div className="center services">
-                {filteredProjects}
-            </div>
-        </div>
-    )
+    return <div className="center card-list">{filteredProjects}</div>
 }
-
-export default Card

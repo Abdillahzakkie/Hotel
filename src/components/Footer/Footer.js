@@ -1,14 +1,13 @@
 import React from 'react';
 import "./footer.css";
 
-const Footer = () => {
+export default function Footer () {
     const getYear = new Date().getFullYear();
     return (
         <div className='center footer'>
             <p>
-                copyright &copy; {getYear} Izaat Clothing Company
+                &copy; {getYear} DragonLord, All Rights Reserved - Designed & Built with 💖 by DragonLord.
             </p>
         </div>
     )
 }
-export default Footer

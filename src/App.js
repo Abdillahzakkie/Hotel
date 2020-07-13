@@ -1,35 +1,34 @@
 import React from 'react';
 import {Switch, Route} from "react-router-dom";
 import './App.css';
-import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import ScrollTop from "./components/ScrollTop/ScrollTop";
+import { handleEffect } from "./components/Normal_Js/handleEffect";
 
 import Home from "./pages/Home";
 import Facilities from "./pages/Facilities";
-import Contact from "./pages/Contact";
+import MyAccount from "./pages/MyAccount";
 import About from "./pages/About";
 import SingleProduct from "./pages/SingleProduct";
 import Error from "./pages/Error";
 
 
-const App = () => {
-  const companyName = 'B Hotel';
+
+export default function App() {
   return (
     <div className="App">
-      <Navbar companyName={companyName} />
-
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/facilities' component={Facilities} />
-        <Route exact path='/facilities/:slug' component={SingleProduct} />
+        <Route exact path='/facilities/:id' component={SingleProduct} />
         <Route exact path='/about' component={About} />
-        <Route exact path='/contact' component={Contact} />
+        <Route exact path='/my_account' component={MyAccount} />
         <Route component={Error} />
       </Switch>
-      
-      <Footer companyName={companyName} />
+
+      <ScrollTop />
+      <Footer />
     </div>
   );
 }
-
-export default App;
+document.addEventListener('scroll', handleEffect);

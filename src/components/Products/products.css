@@ -1,5 +1,5 @@
 .product-section {
-    background: rgba(128, 128, 128, .09);
+    background: var(--mainWhite);
     margin: 0 1.5rem 1rem;
     padding: 2rem;
     transition: var(--mainTransition);
@@ -30,7 +30,6 @@
 }
 
 .product-section .product-checkout:hover{
-    border: .1rem solid var(--white);
-    background: transparent;
-    color: var(--darkGrey);
+    background: var(--darkGrey);
+    color: var(--white);
 }

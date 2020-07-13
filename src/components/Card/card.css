@@ -1,40 +1,31 @@
-.services-container {
-    /* margin: 1.5rem auto; */
-    margin: 0 auto;
+.card-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    margin: 2rem 0;
     padding: 0 2rem;
 }
-.services {
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-}
-.services .card {
-    width: 90%;
+.card-list .card {
     height: 250px;
-    margin: 2rem auto;
-    /* padding: 0; */
     background: var(--mainWhite);
-
     position: relative;
     transition: all 500ms ease-in-out;
     overflow: hidden;
-    box-shadow: 5px 3px 10px 1.5px rgba(0,0,0, .5);
+    box-shadow: 3px 3px 5px 1.5px rgba(0,0,0, .5);
+}
+.card-list .card:hover { box-shadow: 5px 5px 5px 1.5px rgba(0,0,0, .5); }
 
-}
-.services .card:hover {
-    box-shadow: 10px 10px 15px 1.5px rgba(0,0,0, .5);
-}
-.services .card img{
+.card-list .card img{
     width: 100%;
     height: 200px;
     transition: var(--mainTransition);
     overflow: hidden;
 }
-.services .card:hover img{
-    /* takes up the total height of the box */
+.card-list .card:hover img{
     height: 250px;
-    transform: scale(1.);
-    opacity: .7;
+    /* transform: scale(1.); */
+    opacity: .75;
 }
-.services .card h2{
+.card-list .card h2{
     text-transform: uppercase;
     font-size: 1.0rem;
     padding: .5rem 1rem;
@@ -42,9 +33,8 @@
     margin: auto 0;
 }
 
-
 /* Features */
-.services .card .features{
+.card-list .card .features{
     opacity: 0;
     position: absolute;
     top: 42.5%;
@@ -57,27 +47,17 @@
     text-transform: capitalize;
     cursor: pointer;
 }
-.services .card:hover .features{
-    opacity: 1;
-}
+.card-list .card:hover .features{ opacity: 1; }
 
 
 @media (max-width: 599px) {
-    .services-container {
-        padding: 0 ;
-    }
-    .services .card {
-        margin: 0 auto 2rem;
-        padding: 0 ;
-    }
+    .card-list { padding: 0 1rem; grid-gap: .5rem 2rem; }
+    .card-list .card { margin: 0 auto 2rem; padding: 0 ; }
+
     @media (min-width: 321px) and (max-width: 375px) {
-        .services .card .features{
-            left: 37.5%;
-        }
+        .card-list .card .features{ left: 37.5%; }
     }
     @media (min-width: 376px) and (max-width: 539px) {
-        .services .card .features{
-            left: 40%;
-        }
+        .card-list .card .features{ left: 40%; }
     }
 }
