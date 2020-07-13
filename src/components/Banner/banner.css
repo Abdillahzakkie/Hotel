@@ -1,9 +1,9 @@
 .banner-container {
-    /* width: 100%; */
-    height: 100vh;
+    margin: 10vh 0 0;
+    height: 90vh;
     position: absolute;
     top: 0;
-    padding: 40vh 0 0;
+    padding: 27.5vh 0 0;
     left: 0;
     right: 0;
 }
@@ -18,13 +18,8 @@
     z-index: 0;
     padding: 2rem 1rem;
 }
-.banner h2{
-    text-transform: uppercase;
-}
-.banner h2 span{
-    margin-left: .6rem;
-    color: var(--red);
-}
+.banner h2{ text-transform: uppercase; }
+.banner h2 span{ margin-left: .6rem; color: var(--red); }
 
 .banner > div {
     width: 200px;

@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import {ProductContext} from '../Context/ProductContext';
+import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import Navbar from '../components/Navbar/Navbar';
 import Loading from '../components/Loading/Loading';
 
@@ -49,12 +50,10 @@ const SingleProduct = props => {
                 </section>
                 <section className="extras">
                     <h3>extras</h3>
-                    <ul> 
-                        { extras.map((item, i) => <li key={i}>- {item}</li>) } 
-                    </ul>
+                    <ul>{ extras.map((item, i) => <li key={i}>- {item}</li>) }</ul>
                 </section>
             </div>
         </>
     )
 }
-export default SingleProduct
+export default ErrorBoundary(SingleProduct)

@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import Loading from "../Loading/Loading";
 import "./card.css";
 
-const Card = ({cardItem}) => {
+export default function Card({cardItem}) {
     if(!cardItem) { return <Loading /> }
 
     const filteredProjects = cardItem.map(item => {
         return (
-            <div key={item.id} className="center card" >
+            <div key={item.id} className="center card">
                 <img src={item.images[0]} alt={item.name} />
                 <h2>
                     {/* maximum characters 20 words */}
@@ -20,17 +20,5 @@ const Card = ({cardItem}) => {
             </div>
         )
     });
-    
-    return (
-        // <div className='center'>
-        //     <div className="center card-list">
-        //         {filteredProjects}
-        //     </div>
-        // </div>
-        <div className="center card-list">
-            {filteredProjects}
-        </div>
-    )
+    return <div className="center card-list">{filteredProjects}</div>
 }
-
-export default Card

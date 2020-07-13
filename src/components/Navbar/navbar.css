@@ -41,7 +41,7 @@ button, button:focus {
     background: transparent;
     width: 100vw;
     letter-spacing: .075rem;
-    z-index: 100;
+    z-index: 1;
 }
 .fixed-nav {
     position: fixed;

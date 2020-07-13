@@ -2,7 +2,7 @@ import React from 'react';
 import "../products.css";
 import { Link } from 'react-router-dom';
 
-const ProductInfo = (props) => {
+export default function ProductInfo(props) {
     const {seller, name, price, quantity, reviews} = props;
 
     return (
@@ -18,5 +18,3 @@ const ProductInfo = (props) => {
         </section>
     )
 }
-
-export default ProductInfo

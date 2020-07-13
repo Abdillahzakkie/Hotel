@@ -4,7 +4,7 @@ import mainImg from "../assets/hero.jpeg";
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import "./Styles/my-account.css";
 
-const Contact = () => {
+const MyAccount = () => {
     const [input1, setInput1] = useState('');
     const [input2, setInput2] = useState('');
     const [input3, setInput3] = useState('');
@@ -19,7 +19,6 @@ const Contact = () => {
             <div className="center contact-container">
                 <section className="center section">
                     <h2>contact us</h2>
-                    
                 </section>
                 <section className="center section">
                     <h2>contact us</h2>
@@ -47,4 +46,4 @@ const Contact = () => {
     )
 }
 
-export default ErrorBoundary(Contact)
+export default ErrorBoundary(MyAccount)

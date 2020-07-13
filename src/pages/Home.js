@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div className='home'>
             <Navbar />
-            <Header input1='featured products'/>
+            <Header item1='featured products'/>
             <Card cardItem={featuredProducts} />
         </div>
     )

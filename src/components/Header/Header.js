@@ -1,16 +1,13 @@
 import React from 'react';
 import "./header.css";
 
-const Header = ({ input1, input2 }) => {
+export default function Header ({ item1, item2 }) {
     return (
         <div className='center title'>
             <div className="card">
-                <h1>{input1}</h1>
+                <h1>{item1}</h1>
             </div>
-            <div className="card">
-                {input2}
-            </div>
+            <div className="card">{item2}</div>
         </div>
     )
 }
-export default Header

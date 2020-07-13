@@ -1,11 +1,11 @@
 import React from 'react';
 import "./scrollTop.css";
 
-const ScrollTop = () => {
+export default function ScrollTop() {
     return (
-        <div className='center scrollTop scroll-link' onClick={() => window.scrollTo({top: 0, left: 0})}>
+        <div className='center scrollTop scroll-link' 
+            onClick={() => window.scrollTo({top: 0, left: 0})} >
             <span>⬆</span>
         </div>
     )
 }
-export default ScrollTop

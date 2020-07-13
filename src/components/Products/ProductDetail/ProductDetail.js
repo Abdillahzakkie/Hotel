@@ -1,7 +1,7 @@
 import React from 'react';
 import "../products.css";
 
-const ProductDetail = ({description}) => {
+export default function ProductDetail({description}) {
     return (
         <section className='product-section'>
             <h2>details</h2>
@@ -9,5 +9,3 @@ const ProductDetail = ({description}) => {
         </section>
     )
 }
-
-export default ProductDetail

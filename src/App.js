@@ -14,7 +14,7 @@ import Error from "./pages/Error";
 
 
 
-const App = () => {
+export default function App() {
   return (
     <div className="App">
       <Switch>
@@ -32,4 +32,3 @@ const App = () => {
   );
 }
 document.addEventListener('scroll', handleEffect);
-export default App;

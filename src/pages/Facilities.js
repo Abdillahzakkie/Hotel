@@ -20,7 +20,7 @@ const Facilities = () => {
     return (
         <div className='facilities'>
             <Navbar title='Hotel Ng' optionalText='Discover more' />
-            <Header input1='Projects' input2={OptionButton} />
+            <Header item1='Projects' item2={OptionButton} />
             <Card cardItem={sortedProducts} />
         </div>
     )

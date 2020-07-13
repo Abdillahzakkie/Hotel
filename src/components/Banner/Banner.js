@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import './banner.css';
 
 
-const Banner = ({optionalText, title, titleSpan, subtitle, to}) => {
+export default function Banner({ title, titleSpan, subtitle, to, optionalText}) {
     return (
         <div className='banner-container'>
             <div className='center banner'>
@@ -21,5 +21,3 @@ const Banner = ({optionalText, title, titleSpan, subtitle, to}) => {
         </div>
     )
 }
-
-export default Banner
