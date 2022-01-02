@@ -1,29 +1,31 @@
-import React, { useContext } from 'react';
-import Navbar from '../components/Navbar/Navbar';
+import React, { useContext } from "react";
+import Navbar from "../components/Navbar/Navbar";
 // import defaultBcg from "../assets/bg.jpeg";
 import "./Styles/facilities.css";
-import {ProductContext} from "../Context/ProductContext";
-import Card from '../components/Card/Card';
-import Header from '../components/Header/Header';
+import { ProductContext } from "../Context/ProductContext";
+import Card from "../components/Card/Card";
+import Header from "../components/Header/Header";
 
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 
 const Facilities = () => {
-    const context = useContext(ProductContext);
-    const {selectValue, handleSelectChange, category, sortedProducts} = context;
+	const context = useContext(ProductContext);
+	const { selectValue, handleSelectChange, category, sortedProducts } = context;
 
-    const OptionButton = (
-        <select value={selectValue} onChange={handleSelectChange}>
-            { category.map(item => <option key={item}>{item}</option>) }
-        </select>
-    )
-    return (
-        <div className='facilities'>
-            <Navbar title='Hotel Ng' optionalText='Discover more' />
-            <Header item1='Projects' item2={OptionButton} />
-            <Card cardItem={sortedProducts} />
-        </div>
-    )
-}
+	const OptionButton = (
+		<select value={selectValue} onChange={handleSelectChange}>
+			{category.map((item) => (
+				<option key={item}>{item}</option>
+			))}
+		</select>
+	);
+	return (
+		<div className="facilities">
+			{/* <Navbar title='Hotel Ng' optionalText='Discover more' /> */}
+			<Header item1="Projects" item2={OptionButton} />
+			<Card cardItem={sortedProducts} />
+		</div>
+	);
+};
 
-export default ErrorBoundary(Facilities)
+export default ErrorBoundary(Facilities);
